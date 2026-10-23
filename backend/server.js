@@ -72,7 +72,8 @@ app.post('/api/eventos', (req, res) => {
         horario,
         tempoHoras,
         valor,
-        pagamento
+        pagamento,
+        descricao
     } = req.body;
 
     if (
@@ -111,7 +112,8 @@ app.post('/api/eventos', (req, res) => {
         horario: horario.trim(),
         tempoHoras: tempo,
         valor: valorNumerico,
-        pagamento: pagamento.trim()
+        pagamento: pagamento.trim(),
+        descricao: descricao.trim()
     };
 
     eventos.push(novoEvento);
