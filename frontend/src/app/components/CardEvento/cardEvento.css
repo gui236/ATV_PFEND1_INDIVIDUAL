@@ -2,40 +2,47 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    border: 1px solid gray;
+    border: 1px solid var(--border);
     border-radius: 5px;
-    background-color: white;
+    background-color: var(--card-color);
     width: 320px;
     height: 200px;
+    transition: ease 0.3s;
+}
+
+.card-body:hover{
+    transform: translateY(-5%);
 }
 
 .card-title{
-    background-color: white;
+    background-color: var(--card-color);
+    color: var(--text);
 }
 
 .card-subtitle{
-    background-color: white;
+    background-color: var(--card-color);
 }
 
 .card-text {
     margin-top: 0.8rem;
-    background-color: white;
+    background-color: var(--card-color);
+    color: var(--text);
 }
 
 .link {
     align-self: flex-start;
     margin-top: auto;
-    background-color: green;
+    background-color: var(--green);
     padding: 8px;
     font-size: 1rem;
     border-radius: 5px;
-    color: white;
+    color: var(--text);
     text-decoration: none;
     transition: ease 0.3s;
 }
 
 .link:hover{
-    background-color: rgb(0, 100, 0);
+    background-color: var(--dark-green);
 }
 
 .container-cards{

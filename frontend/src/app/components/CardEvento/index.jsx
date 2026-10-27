@@ -9,7 +9,7 @@ export default function CardEvento({evento}) {
                 <p className="card-text">
                     {evento.descricao}
                 </p>
-                <a href="#" className="link">Card link</a>
+                <a href={`/eventos/${evento.id}`} className="link">Card link</a>
             </div>
         </div>
 

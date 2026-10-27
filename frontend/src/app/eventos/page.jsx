@@ -1,10 +1,12 @@
 "use client";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import "./eventos.css";
 import CardEvento from "../components/CardEvento";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function Eventos() {
     const [eventos, setEventos] = useState([]);
@@ -27,8 +29,14 @@ export default function Eventos() {
         <main>
             <div className="container">
                 <div className="topo">
-                    {/* Colocar a Logo */}
-                    <h1 className="fw-semibold">FUTMANIA</h1> <hr />
+                    <img src="/logo.png" alt="" />
+                    <h1 className="fw-semibold">FUTMANIA</h1>
+                </div>
+
+                <div className="descricao">
+                    <p>
+                        Futmania — Sua paixão pelo esporte, nosso espaço para jogar!
+                    </p>
                 </div>
 
                 <div className="container-cards">
@@ -38,6 +46,8 @@ export default function Eventos() {
                         })
                     }
                 </div>
+
+                    <Link href="/" className="btn-add"> <i className="bi bi-plus-lg"></i> Novo Aluguel</Link>
             </div>
         </main>
     )
