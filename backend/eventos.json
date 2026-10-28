@@ -50,16 +50,6 @@
     "pagamento": "Pago"
   },
   {
-    "id": 6,
-    "responsavel": "Piccolo",
-    "data": "2026-11-02",
-    "horario": "16:00",
-    "tempoHoras": 1,
-    "valor": 250,
-    "descricao": "Aluguel da quadra externa para treino de basquete",
-    "pagamento": "Pendente"
-  },
-  {
     "id": 7,
     "responsavel": "Trunks",
     "data": "2026-11-03",

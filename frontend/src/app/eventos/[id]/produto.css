@@ -1,16 +1,77 @@
-.container{
-    margin: auto;
-    height: 100vh;
-    /* background-color: aqua; */
+*{
+    color: var(--text);
+}
+
+.card-title{
+    color: var(--text);
+}
+
+.card-body {
+    outline: 1px solid var(--border);
+}
+
+.card-header{
+    outline: 1px solid var(--border);
+    color: var(--border);
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    font-weight: bold;
+    height: 60px;
+    padding: 0.8rem;
+}
+
+.pago p{
+    margin: 0;
+    color: green;
+    padding: 0.4rem;
+    border-radius: 5px;
+    background-color: rgba(0, 128, 0, 0.5);
+}
+
+.pendente p{
+    margin: 0;
+    color: orange;
+    padding: 0.4rem;
+    border-radius: 5px;
+    background-color: rgba(255, 166, 0, 0.5);
+}
+
+.card-footer {
+    outline: 1px solid var(--border);
+    color: var(--border);
 }
 
 .card{
-    width: 100px;
-    height: 100px;
     background-color: var(--card-color);
 }
 
+.card-subtitle{
+    color: var(--text);
+    font-size: 1.2rem;
+}
+
+hr{
+    height: 1px;
+    width: 100%;
+    border: 0;
+    background-color: var(--border);
+}
+
+.btn-solid{
+    color: var(--green);
+    cursor: pointer;
+}
+
+#modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 700px;
+    padding: 1rem;
+    background-color: var(--card-color);
+    /* border: 1px solid var(--border); */
+    box-shadow: 0 0 5px rgba(170, 170, 170, 0.5);
+    border-radius: 5px;
+}
