@@ -1,0 +1,6 @@
+.container form {
+    background-color: var(--card-color);
+    width: 400;
+    height: 670px;
+    border-radius: 8px;
+}

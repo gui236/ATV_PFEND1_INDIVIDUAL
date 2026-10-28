@@ -47,7 +47,7 @@ export default function Eventos() {
                     }
                 </div>
 
-                    <Link href="/" className="btn-add"> <i className="bi bi-plus-lg"></i> Novo Aluguel</Link>
+                    <Link href="/addEvento" className="btn-add"> <i className="bi bi-plus-lg"></i> Novo Aluguel</Link>
             </div>
         </main>
     )

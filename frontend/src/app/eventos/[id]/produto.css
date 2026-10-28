@@ -10,6 +10,18 @@
     outline: 1px solid var(--border);
 }
 
+a{
+    padding: 0.7rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--border);
+    transition: ease 0.3s;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 .card-header{
     outline: 1px solid var(--border);
     color: var(--border);
@@ -21,15 +33,16 @@
 }
 
 .pago p{
-    margin: 0;
+    margin: 0 0 0 10px;
     color: green;
     padding: 0.4rem;
     border-radius: 5px;
     background-color: rgba(0, 128, 0, 0.5);
+    margin-left: 5px;
 }
 
 .pendente p{
-    margin: 0;
+    margin: 0 0 0 10px;
     color: orange;
     padding: 0.4rem;
     border-radius: 5px;
@@ -68,7 +81,7 @@ hr{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 450px;
-    height: 700px;
+    height: 580px;
     padding: 1rem;
     background-color: var(--card-color);
     /* border: 1px solid var(--border); */

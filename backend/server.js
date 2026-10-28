@@ -150,7 +150,8 @@ app.put('/api/eventos/:id', (req, res) => {
         horario,
         tempoHoras,
         valor,
-        pagamento
+        pagamento,
+        descricao
     } = req.body || {};
 
     if (
@@ -185,7 +186,8 @@ app.put('/api/eventos/:id', (req, res) => {
         horario: horario.trim(),
         tempoHoras: tempo,
         valor: valorNumerico,
-        pagamento: pagamento.trim()
+        pagamento: pagamento.trim(),
+        descricao: typeof descricao === 'string' ? descricao.trim() : ''
     };
 
     eventos[indice] = eventoAtualizado;
